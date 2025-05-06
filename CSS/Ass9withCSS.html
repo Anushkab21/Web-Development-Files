@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment9</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        table {
+            width: 30%;
+            margin: auto;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        fieldset {
+            border: none;
+            padding: 20px;
+        }
+
+        legend {
+            font-weight: bold;
+            color: #34495e;
+            font-size: 18px;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            width: 90%;
+            padding: 8px;
+            margin-top: 4px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        label {
+            margin-right: 10px;
+        }
+
+        input[type="radio"] {
+            margin-left: 10px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Assignment No.9</h1>
+
+    <form action="server">
+        <table>
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>Employee Details</legend>
+
+                        First Name:<br>
+                        <input type="text" name="first_name" placeholder="First Name" required><br><br>
+
+                        Last Name:<br>
+                        <input type="text" name="last_name" placeholder="Last Name" required><br><br>
+
+                        Select your Gender:<br>
+                        <input type="radio" name="gender" id="Male" value="Male" required>
+                        <label for="Male">Male</label>
+                        <input type="radio" name="gender" id="Female" value="Female">
+                        <label for="Female">Female</label>
+                        <input type="radio" name="gender" id="Other" value="Other">
+                        <label for="Other">Other</label><br><br>
+
+                        Employee ID:<br>
+                        <input type="number" name="employee_id" placeholder="Employee ID" required><br><br>
+
+                        Designation:<br>
+                        <input type="text" name="designation" placeholder="Designation" required><br><br>
+
+                        Phone Number:<br>
+                        <input type="number" name="phone" placeholder="Phone Number" required><br><br>
+
+                        <button type="submit">Submit</button>
+                    </fieldset>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Development Assignments</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: linear-gradient(to right, #4e4376, #2b5876);
+      color: #fff;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      text-shadow: 1px 1px 3px #000;
+    }
+
+    h2 {
+      margin: 5px;
+      font-size: 1.3rem;
+    }
+
+    .btn {
+      margin: 10px;
+      padding: 12px 25px;
+      background-color: #ff91a4;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #e06480;
+      transform: scale(1.05);
+    }
+
+    .assignment-list {
+      display: none;
+      margin-top: 15px;
+    }
+
+    .assignment-list a {
+      display: block;
+      margin: 5px auto;
+      padding: 10px;
+      width: 60%;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 6px;
+      color: #fff;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .assignment-list a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Web Development Assignments</h1>
+  <h2>Name: Anushka Bawkar</h2>
+  <h2>Roll No: 108</h2>
+
+  <button class="btn" onclick="toggleList('html')">HTML Files</button>
+  <button class="btn" onclick="toggleList('css')">CSS Files</button>
+  <button class="btn" onclick="toggleList('xml')">XML Files</button>
+
+  <!-- HTML Assignments -->
+  <div id="html" class="assignment-list">
+    <a href="HTML/Assignment1.html" target="_blank">HTML Assignment 1</a>
+    <a href="HTML/Assignment2.html" target="_blank">HTML Assignment 2</a>
+    <a href="HTML/Assignment3.html" target="_blank">HTML Assignment 3</a>
+    <a href="HTML/Assignment4.html" target="_blank">HTML Assignment 4</a>
+    <a href="HTML/Assignment5.html" target="_blank">HTML Assignment 5</a>
+    <a href="HTML/Assignment6.html" target="_blank">HTML Assignment 6</a>
+    <a href="HTML/Assignment7.html" target="_blank">HTML Assignment 7</a>
+    <a href="HTML/Assignment8.html" target="_blank">HTML Assignment 8</a>
+    <a href="HTML/Assignment9.html" target="_blank">HTML Assignment 9</a>
+    <a href="HTML/Assignment10.html" target="_blank">HTML Assignment 10</a>
+  </div>
+
+  <!-- CSS Assignments -->
+  <div id="css" class="assignment-list">
+    <a href="CSS/Ass2withCSS.html" target="_blank">CSS Assignment 1</a>
+    <a href="CSS/Ass3withCSS.html" target="_blank">CSS Assignment 2</a>
+    <a href="CSS/Ass4withCSS.html" target="_blank">CSS Assignment 3</a>
+    <a href="CSS/Ass5withCSS.html" target="_blank">CSS Assignment 4</a>
+    <a href="CSS/Ass6withCSS.html" target="_blank">CSS Assignment 5</a>
+    <a href="CSS/Ass7withCSS.html" target="_blank">CSS Assignment 6</a>
+    <a href="CSS/Ass8withCSS.html" target="_blank">CSS Assignment 7</a>
+    <a href="CSS/Ass9withCSS.html" target="_blank">CSS Assignment 8</a>
+    <a href="CSS/Ass10withCSS.html" target="_blank">CSS Assignment 9</a>
+    <a href="CSS/Ass2withCSS.html" target="_blank">CSS Assignment 10</a>
+  </div>
+
+  <!-- XML Assignments -->
+  <div id="xml" class="assignment-list">
+    <a href="XML/employee.xml" target="_blank">XML Assignment 1</a>
+    <a href="XML/library.xml" target="_blank">XML Assignment 2</a>
+    <a href="XML/student.xml" target="_blank">XML Assignment 3</a>
+  </div>
+
+  <script>
+    function toggleList(id) {
+      const sections = document.querySelectorAll('.assignment-list');
+      sections.forEach(section => {
+        if (section.id === id) {
+          section.style.display = section.style.display === 'block' ? 'none' : 'block';
+        } else {
+          section.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>

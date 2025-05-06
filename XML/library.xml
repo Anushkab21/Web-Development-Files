@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="library.css"?>
+
+<library>
+   
+    <book>
+        <id>001</id>
+        <title>Introduction to XML</title>
+        <author>John XMLson</author>
+        <year>2018</year>
+        <copies>5</copies>
+    </book>
+
+    <book>
+        <id>002</id>
+        <title>Mastering XSLT</title>
+        <author>Jane Transform</author>
+        <year>2020</year>
+        <copies>3</copies>
+    </book>
+
+    <book>
+        <id>003</id>
+        <title>Learning XPath</title>
+        <author>Mark Selector</author>
+        <year>2022</year>
+        <copies>4</copies>
+    </book>
+</library>

@@ -1,0 +1,36 @@
+students {
+    display: block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #e1f5fe, #fce4ec);
+    padding: 30px;
+    color: #333;
+}
+
+student {
+    display: block;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #90caf9;
+    border-radius: 10px;
+    background-color: #ffffff;
+    width: 60%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+id, name, age, department, email {
+    display: block;
+    margin: 8px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #1565c0;
+}
+
+name {
+    font-size: 18px;
+    color: #ad1457;
+}
+
+email {
+    font-style: italic;
+    color: #00796b;
+}
